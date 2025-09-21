@@ -21,40 +21,49 @@ def setup_clients():
     """A smart function to set up API clients for both local and deployed environments."""
     try:
         # --- For Deployed App (on Streamlit Cloud) ---
-        # Load secrets from Streamlit's secrets manager
-        service_account_info = json.loads(st.secrets["gcp_service_account_key"])
+        # Build the credentials dictionary from individual secrets
+        service_account_info = {
+            "type": "service_account",
+            "project_id": st.secrets["gcp_project_id"],
+            "private_key_id": st.secrets["gcp_private_key_id"],
+            "private_key": st.secrets["gcp_private_key"].replace('\\n', '\n'),
+            "client_email": st.secrets["gcp_client_email"],
+            "client_id": st.secrets["gcp_client_id"],
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": st.secrets["gcp_token_uri"],
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": f"https://www.googleapis.com/robot/v1/metadata/x509/{st.secrets['gcp_client_email'].replace('@', '%40')}"
+        }
+        
         credentials = service_account.Credentials.from_service_account_info(service_account_info)
-
         api_key = st.secrets["genai_api_key"]
-        project_id = st.secrets["google_cloud_project_id"]
+        # Use the project_id from the secrets for consistency
+        project_id = st.secrets["gcp_project_id"] 
         st.success("Connected to Google Cloud using Streamlit Secrets!")
 
     except (FileNotFoundError, KeyError):
         # --- For Local Development ---
-        # Load secrets from the local .env file
         st.info("Running locally. Loading secrets from .env file.")
         load_dotenv()
         api_key = os.getenv("GENAI_API_KEY")
         project_id = os.getenv("GOOGLE_CLOUD_PROJECT_ID")
         key_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
-
+        
         if not os.path.isfile(key_path):
             st.error(f"Local dev: Service account key file not found at '{key_path}'. Please check your .env file.")
             st.stop()
         credentials = service_account.Credentials.from_service_account_file(key_path)
 
-    # --- Configure and return clients (this part is the same for both environments) ---
+    # --- Configure and return clients ---
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel('gemini-1.5-flash')
-
+    
     docai_client = documentai.DocumentProcessorServiceClient(
         client_options=ClientOptions(api_endpoint="us-documentai.googleapis.com"),
         credentials=credentials
     )
-
+    
     return model, docai_client, project_id
-
-
 # --- Helper Functions ---
 def extract_text_from_pdf(pdf_file):
     """Extracts text from an uploaded PDF file."""
