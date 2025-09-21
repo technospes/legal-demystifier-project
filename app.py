@@ -2,7 +2,7 @@ import streamlit as st
 from PyPDF2 import PdfReader
 from PIL import Image
 import os
-import toml
+import json
 from dotenv import load_dotenv
 import google.generativeai as genai
 from google.cloud import documentai
@@ -22,7 +22,7 @@ def setup_clients():
     try:
         # --- For Deployed App (on Streamlit Cloud) ---
         # Load secrets from Streamlit's secrets manager
-        service_account_info = toml.loads(st.secrets["gcp_service_account_key"])
+        service_account_info = json.loads(st.secrets["gcp_service_account_key"])
         credentials = service_account.Credentials.from_service_account_info(service_account_info)
 
         api_key = st.secrets["genai_api_key"]
