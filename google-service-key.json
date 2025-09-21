@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "genai-hackathon-project",
+  "private_key_id": "b6194d69fad1a97b7dcd6c02ce118a1691df0564",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCd6VAfweLD3xPC\n3bPeNpn4bJNVWgs45FDDpUCXKAgOUPvWZWf5q2SEKwFcZK0Qsw8khFini6WhTSYL\n0uhhWBJmtdxloCNPlRCIKWI2YzmoPQE5NKojfDO2jqxBr3+/h2AfY8WcGp4U9fNn\nNmHRAKY1tckwdxs/CPEKXmas1lYcogXVCdWHQfPoq45Z92YuuhPtPfR9gBV/U8xK\n7jtD4sceP4nW8clPkMU8Do7uYZsZr+gs6NNkLKu0chHueWny+Eng4op2KdOTCntJ\nP6KtzS360E1EBo9QJ+QQl5UrdnbXbP76bEIcgzLjDpM1xPGEXT8AcvhIuaD855O3\n4p3lVY+TAgMBAAECggEAO/AAkSVLOPSV8Butt5U7CQ/RNo7ofo4u16wEYbt4n1J+\n3Ih+GEbFbuNR72tpQ1Lr1v0DF4lKc3iwjcFeogBHb8PspYhMjtryPPSUSjeMfX62\nVavXPoPYrxzlZkNCdoTgZ9m7en6h7SvT2SPLqgSYkf9vn5098sWmlDxztXvfkJsY\nMmcchRNIhbRYzT52szBzQrjpgtSTG8MaZ1DVjP0ku1t7CCRzKVSrT00OpcxgQspp\nhBbkM+oCflgjhYk6g+osJsle22TlvtJpWAOe44JsxHKnRFaZ70uIXEoR14iHuyMl\ng2SD2234jvwIVfknTj7c1O6BakzuvGY1UDQPXY70FQKBgQDWL4p+1fDVASOZG9nD\n2CO+W2YH9eMCzdSMKIH/ESnrnU0YKNjwt/nPEqRpOQEcRTbg4tWZqXE60cR87yNo\nzbLm6HLOj+FZvioqEUR2YEY87dMLPgc19dfIcZ5njCnX5g2HRY15uL/+cAnZwogn\nhF0Tjcd9tGxeHcHo9GCQFF2UJQKBgQC8vVLZsXU0u3cdxMYnaF0kIkeFFbGViGg2\nPDCMGem9FS9nyfX3RHliENseujVb6knXBfvnC98R+dT+ZgpBVKUW4z3MorKmOHkt\nOHxcMRwYUX0ZR8vBlWknuwCWKOO1imz32k884yD5RmpNCCGh+nZVQ231lRNBE9wH\n7RilJy4rVwKBgQCurHDPRZy1qcslR4BN5own5xQLs+zh0YjgkPyLTq0YWN2RsWZS\n0kcpJ/PrWDDepFfACV3Xhkcwh/gtRz1icDbRd4qBiPdoH9z1F8X0oElH0VCG35wz\n1n2XG4nqunU5fIVV51Qci54QW8C81ZgCWkEp/DtP+f9StgP4/qttdR5n/QKBgQCI\n5JCpEItAOhBFaSmH/6w+vxY8suVg3dUoMTPNCiZ8XFdL4jIirGmV9T/Y45o8FoyE\nBvUUOYoMEbao5f3eMLSlCyERwZft89wALo4UmBIWmVQw9+ATgnkIthvQzcuLKuGq\nS49ZTCvoYWhMgu9R+sXFRekFTKDwfKUEorVTZD2adQKBgEuJxv/GI/DdLJjsLJVk\n33d/LJLuV6KuZNifTmYk4xVPwx1jB10vY7AcjvjlyviQgkkOdVSrZk7Oe7XDksjz\ne5LX+QOEL6n/3Tk0Fany+DnwY3kwWVu0znMVRrHnX3M5fzdjbgGQPg+9+81tYO0T\n1/FmL9nIfiq09DmUJni46N/U\n-----END PRIVATE KEY-----\n",
+  "client_email": "legal-document-demystifier@genai-hackathon-project.iam.gserviceaccount.com",
+  "client_id": "110695815277115560013",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/legal-document-demystifier%40genai-hackathon-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
