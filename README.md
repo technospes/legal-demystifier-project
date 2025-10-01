@@ -1,6 +1,6 @@
 # ⚖️ ParleyAlly – Legal Document Demystifier
 
-ParleyAlly is a Python-based backend service designed to act as a digital interpreter for complex legal documents. [cite_start]By leveraging Optical Character Recognition (OCR) and Generative AI, it transforms dense, jargon-filled text into simple, understandable summaries, empowering non-lawyers to comprehend the documents they are reading or signing.
+ParleyAlly is a Python-based backend service designed to act as a digital interpreter for complex legal documents. By leveraging Optical Character Recognition (OCR) and Generative AI, it transforms dense, jargon-filled text into simple, understandable summaries, empowering non-lawyers to comprehend the documents they are reading or signing.
 
 ---
 
@@ -21,19 +21,19 @@ ParleyAlly provides a simple-to-use service that ingests a legal document (even 
 ## ✨ Key Features Explained
 
 - **Universal Document Ingestion:** The service handles both digitally-native PDFs and scanned, image-based documents by using a robust pipeline that first attempts direct text extraction and then falls back to a powerful Tesseract OCR engine.
-- **Intelligent Summarization with RAG:** To ensure high accuracy and prevent AI "hallucinations," ParleyAlly uses a **Retrieval-Augmented Generation (RAG)** pipeline. [cite_start]This provides the Generative AI with relevant context *before* it creates the summary, dramatically improving the factual accuracy of the output. [cite: 25]
-- **Jargon-to-Plain-Language Translation:** The core value of the application. [cite_start]It can identify and translate specific legal terminology (e.g., "heretofore," "party of the first part") into simple, modern language. [cite: 26]
-- **Scalable API Endpoint:** The entire service is exposed via a **RESTful API**, allowing other applications—like a mobile app or a website front-end—to easily integrate its document simplification capabilities.
+- **Intelligent Summarization with RAG:** To ensure high accuracy and prevent AI "hallucinations," ParleyAlly uses a Retrieval-Augmented Generation (RAG) pipeline. This provides the Generative AI with relevant context before it creates the summary, dramatically improving the factual accuracy of the output.
+- **Jargon-to-Plain-Language Translation:** The core value of the application. It can identify and translate specific legal terminology (e.g., "heretofore," "party of the first part") into simple, modern language.
+- **Scalable API Endpoint:** The entire service is exposed via a RESTful API, allowing other applications—like a mobile app or a website front-end—to easily integrate its document simplification capabilities.
 
 ---
 
 ## ⚙️ How It Works
 
 1.  **API Request:** A client sends a `POST` request to the API endpoint with a PDF document.
-2.  **Text Extraction Pipeline:** The backend, built with Python, first uses the **PyPDF2** library to attempt direct text extraction. [cite_start]If the text is garbled or absent (indicating a scan), it passes the PDF pages to the **Tesseract OCR** engine to convert the images to raw text. [cite: 24]
-3.  **Text Pre-processing:** The raw text is cleaned, structured, and prepared for the AI model using libraries like **NumPy** and **Pandas**.
+2.  **Text Extraction Pipeline:** The backend, built with Python, first uses the PyPDF2 library to attempt direct text extraction. If the text is garbled or absent (indicating a scan), it passes the PDF pages to the Tesseract OCR engine to convert the images to raw text.
+3.  **Text Pre-processing:** The raw text is cleaned, structured, and prepared for the AI model using libraries like NumPy and Pandas.
 4.  **RAG Execution:** The cleaned text is used as a query to a knowledge base. The original text plus the retrieved context are fed into the Generative AI model.
-5.  [cite_start]**Summary Generation:** The GenAI model, guided by the RAG pipeline and sophisticated prompt engineering, generates the final simplified summary and explanations. [cite: 25]
+5.  **Summary Generation:** The GenAI model, guided by the RAG pipeline and sophisticated prompt engineering, generates the final simplified summary and explanations.
 6.  **API Response:** The service returns the simplified text in a structured JSON format.
 
 ---
@@ -60,12 +60,6 @@ ParleyAlly provides a simple-to-use service that ingests a legal document (even 
 
 ---
 
-## 👥 Contributors
-
-- **Ayush Shukla** - *Team Lead & Unity Developer* - [GitHub](https://github.com/technospes)
-
----
-
 ## 🤝 Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -78,7 +72,13 @@ If you have a suggestion that would make this better, please fork the repo and c
 4.  **Push** to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a **Pull Request**
 
-### Reporting Bugs
-If you encounter a bug, please open an issue and provide detailed steps to reproduce the problem.
+---
+
+## 👤 Contributor
+
+- **Ayush Shukla** - *Project Lead & Developer* - [GitHub](https://github.com/technospes)
 
 ---
+
+## 📄 License
+This project is licensed under the MIT License.
