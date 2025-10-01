@@ -57,3 +57,28 @@ ParleyAlly provides a simple-to-use service that ingests a legal document (even 
     - Training a custom **Named Entity Recognition (NER)** model using a library like **spaCy** or **PyTorch** to automatically identify and tag key entities like names, dates, monetary values, and jurisdictions.
     - Adding support for more document formats, such as `.docx` and `.txt`.
     - Building a simple front-end with React or vanilla JavaScript to provide a user-friendly web interface for the service.
+
+---
+
+## 👥 Contributors
+
+- **Ayush Shukla** - *Team Lead & Unity Developer* - [GitHub](https://github.com/technospes)
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+1.  **Fork** the Project
+2.  Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3.  **Commit** your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  **Push** to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a **Pull Request**
+
+### Reporting Bugs
+If you encounter a bug, please open an issue and provide detailed steps to reproduce the problem.
+
+---
