@@ -1,6 +1,6 @@
 # ⚖️ ParleyAlly – Legal Document Demystifier
 
-ParleyAlly is a Python-based backend service designed to act as a digital interpreter for complex legal documents. [cite_start]By leveraging Optical Character Recognition (OCR) and Generative AI, it transforms dense, jargon-filled text into simple, understandable summaries, empowering non-lawyers to comprehend the documents they are reading or signing. [cite: 22, 24, 26]
+ParleyAlly is a Python-based backend service designed to act as a digital interpreter for complex legal documents. [cite_start]By leveraging Optical Character Recognition (OCR) and Generative AI, it transforms dense, jargon-filled text into simple, understandable summaries, empowering non-lawyers to comprehend the documents they are reading or signing.
 
 ---
 
