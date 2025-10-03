@@ -93,7 +93,7 @@ def setup_clients():
 
     # Configure and return clients
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('models/gemini-flash-latest')
     
     docai_client = documentai.DocumentProcessorServiceClient(
         client_options=ClientOptions(api_endpoint="us-documentai.googleapis.com"),
@@ -275,7 +275,7 @@ if st.session_state.text_content:
                 ---
                 """
                 
-                flash_model = genai.GenerativeModel('gemini-1.5-flash')
+                flash_model = genai.GenerativeModel('models/gemini-flash-latest')
                 response = flash_model.generate_content(risk_grouping_prompt)
                 
                 try:
@@ -348,7 +348,7 @@ if st.session_state.text_content:
 
             # Generate the response using the Pro model and the improved prompt
             with st.spinner("Thinking..."):
-                pro_model = genai.GenerativeModel('gemini-1.5-flash')
+                pro_model = genai.GenerativeModel('models/gemini-flash-latest')
                 
                 # This improved prompt instructs the model to be more factual and careful
                 improved_prompt = f"""
