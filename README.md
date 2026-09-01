@@ -14,7 +14,7 @@ ParleyAlly provides a simple-to-use service that ingests a legal document (even 
 
 ## 📷 Demo
 
-[ADD A SCREENSHOT HERE: Show a side-by-side comparison of a complex legal clause on the left and ParleyAlly's simplified explanation on the right.]
+[.....]
 
 ---
 
